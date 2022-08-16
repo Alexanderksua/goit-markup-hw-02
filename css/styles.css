@@ -1,3 +1,254 @@
+/* BODY */
+body {
+      background-color: #F5F5F5;
+}
+
+/* MAIN */
+
+/* HEADER */
+
+/* Шрифт и Цвет Текстового Логотипа */
+.logo-header {
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 31px;
+      letter-spacing: 0.03em;
+      color: black;
+}
+
+/* Цвет части текста "Web" Текстового Логотипа */
+.blue-web {
+      color: #2196F3;
+}
+
+/* Отмена цвета по умолчанию текста ссылок навигации */
+a[href="./index.html"],
+a[href="./portfolio.html"],
+a[href="./contacts.html"] {
+      color: #212121;
+}
+
+/* Отмена цвета по умолчанию текста ссылок контактов */
+a[href="mailto:info@devstudio.com"],
+a[href="tel:+380961111111"] {
+      color: #757575;
+}
+
+/* Шрифт и цвет текста ссылок навигации и контактов */
+.pages,
+.contacts {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.02em;
+      color: #212121;
+}
+
+/* Цвет текста ссылок навигации и контактов 
+при наведениии курсора мыши :hover изменяется */
+.pages-studio-hover:hover,
+.contacts-email-hover:hover,
+.contacts-tel-hover:hover {
+      color: #2196F3;
+}
+
+/* Назначение каждой части хедера метода отображения flex*/
+.logo-header,
+.pages,
+.contacts {
+      display: flex;
+      padding: 0px;
+      margin: 0px;
+}
+
+/* Рассположение трёх частей хедера в ряд */
+.header-background {
+      width: 1600px;
+      height: 80px;
+      background-color: #FFFFFF;
+      display: flex;
+      flex-direction: row;
+}
+
+/* Отступы между частями хедера согласно макету */
+/* Расстояние отступа внешнего от предыдущего элемента части
+ определенно в margin-left */
+.logo-header {
+      margin-left: 215px;
+      margin-top: 24px;
+      margin-bottom: 25px;
+}
+
+.pages {
+      margin-left: 93px;
+      margin-top: 32px;
+      margin-bottom: 32px;
+}
+
+.contacts {
+      margin-left: 344px;
+      margin-top: 32px;
+      margin-bottom: 32px;
+}
+
+/* Отступ внутренний между Портфолио определён
+с помощью padding-.. */
+.portfolio-padd {
+      padding-left: 50px;
+      padding-right: 50px;
+}
+
+.tel-padd {
+      padding-left: 50px;
+}
+
+
+
+/* HERO */
+
+/* Цвет и размер блока HERO */
+.main-top-section-background {
+      width: 1600px;
+      height: 600px;
+      background-color: #2F303A;
+      margin: 0px;
+      padding: 0px;
+
+}
+
+/* Размещение текста и кнопки по центру блока */
+.main-top-section-title,
+.main-top-section-button {
+      text-align: center;
+      display: block;
+}
+
+/* Размер и позиция блока заголовка HERO */
+.main-top-section-title {
+      width: 696px;
+      height: 120px;
+      margin: 0px;
+      padding-top: 200px;
+      padding-left: 452px;
+      padding-right: 452px;
+}
+
+/* Размер и позиция блока кнопки "Замовити послугу" */
+.main-top-section-button {
+      width: 216px;
+      height: 50px;
+      margin: 0px;
+      padding: 30px 692px;
+
+}
+
+/* Шрифт и цвет заголовка секции HERO */
+.main-top-section-title {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 60px;
+      text-align: center;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+}
+
+/* Шрифт и цвет заголовка кнопки "Замовити послугу" */
+.button-style {
+      background: #2196F3;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+}
+
+/* FOOTER */
+.footer-contacts {
+      background-color: #2F303A;
+}
+
+.logo-footer {
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 31px;
+      letter-spacing: 0.03em;
+      color: white;
+}
+
+.blue-web {
+      color: #2196F3;
+}
+
+/* Шрифт для строк адреса физического, почты и телефона */
+.address {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.03em;
+      font-style: normal;
+}
+
+/* Местоположение элементов списка*/
+.address-links {
+      padding-left: 0px;
+}
+
+/* Цвет текста адреса физический Студии */
+.map {
+      color: #FFFFFF;
+}
+
+/* Цвет текста адреса почты и телефона в Футере */
+.mailto,
+.tel {
+      color: rgba(255, 255, 255, 0.6);
+}
+
+/* PORTFOLIO CSS */
+.link {
+      text-decoration: none;
+      font-style: none;
+}
+
+.address,
+.address-links,
+.button,
+.card,
+.contacts,
+.pages,
+.team-photos {
+      list-style-type: none;
+}
+
+.card-1-techno,
+.card-2-basket,
+.card-3-seafood,
+.card-4-prime,
+.card-5-boxes,
+.card-6-inspiration,
+.card-7-book,
+.card-8-lab,
+.card-9-business {
+      width: 370px;
+      height: 404px;
+      background: #FFFFFF;
+      border: 1px solid #EEEEEE;
+}
+
+
+
+
+
+
+
 /* 
 Проект
 ++«A1» В корне проекта есть папка images с изображениями. 
@@ -54,40 +305,3 @@
 --«С17» В стилях не повторяются значения свойств, которые заданы браузером по умолчнаию. Например, ссылкам не нужно указывать cursor: pointer,
       а абзацам font-style: normal или font-weight: 400. 
 */
-
-body {
-      background-color: #F5F5F5;
-}
-
-
-/* PORTFOLIO CSS */
-.link {
-      text-decoration: none;
-      font-style: none;
-}
-
-.address,
-.address-links,
-.button,
-.card,
-.contacts,
-.pages,
-.team-photos
- {
-      list-style-type: none;
-}
-
-.card-1-techno,
-.card-2-basket,
-.card-3-seafood,
-.card-4-prime,
-.card-5-boxes,
-.card-6-inspiration,
-.card-7-book,
-.card-8-lab,
-.card-9-business {
-      width: 370px;
-      height: 404px;
-      background: #FFFFFF;
-      border: 1px solid #EEEEEE;
-}
