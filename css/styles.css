@@ -21,6 +21,10 @@ body {
       color: #2196F3;
 }
 
+.link {
+      text-decoration: none;
+}
+
 /* Отмена цвета по умолчанию текста ссылок навигации */
 a[href="./index.html"],
 a[href="./portfolio.html"],
@@ -44,6 +48,7 @@ a[href="tel:+380961111111"] {
       line-height: 16px;
       letter-spacing: 0.02em;
       color: #212121;
+      list-style-type: none;
 }
 
 /* Цвет текста ссылок навигации и контактов 
@@ -168,13 +173,6 @@ a[href="tel:+380961111111"] {
 /* КАЧЕСТВА СТУДИИ КАЧЕСТВА СТУДИИ КАЧЕСТВА СТУДИИ КАЧЕСТВА СТУДИИ КАЧЕСТВА СТУДИИ*/
 
 /* Размеры и позиция секции качеств студии */
-.qualitie {
-      width: 1600px;
-      height: 98px;
-      margin-top: 94px;
-      margin-left: 215px;
-      padding: 0px;
-}
 
 /* Размеры и позиция єлементов секции качеств студии */
 .qualitie-details,
@@ -182,14 +180,26 @@ a[href="tel:+380961111111"] {
 .qualitie-planning,
 .qualitie-techs {
       width: 270px;
-      padding-left: 15px;
-      padding-right: 15px;
+      height: 98px;
+      padding-right: 30px;
+      margin-top: 94px;
+}
+
+.qualitie-title {
+      margin: 0%;
+      padding: 0%;
+
 }
 
 /* Отмена оформления метки элементов списков */
 .qualitie-feature,
 .specs-images {
       list-style-type: none;
+      list-style-position: inside;
+      padding-left: 0px;
+      padding-top: 0px;
+      margin-top: 0px;
+      margin-left: 215px;
 }
 
 /* Список качеств студии позиционирование списка в ряд */
@@ -263,6 +273,7 @@ a[href="tel:+380961111111"] {
       letter-spacing: 0.03em;
       color: #212121;
 }
+
 /* Цвет фона, размеры и оформление тени карточки сотрудника */
 .team-card-background {
       width: 270px;
@@ -276,7 +287,9 @@ a[href="tel:+380961111111"] {
 .team-photos {
       display: flex;
       flex-direction: row;
+      padding: 0px;
       margin-left: 215px;
+      list-style-type: none;
 }
 
 /* Отступы между фото */
@@ -318,7 +331,10 @@ a[href="tel:+380961111111"] {
 .footer-contacts {
       width: 1600px;
       height: 252px;
-      margin-top: 94px;
+      display: flex;
+      margin: 0%;
+      padding: 0%;
+      flex-direction: column;
       background-color: #2F303A;
 }
 
@@ -326,61 +342,72 @@ a[href="tel:+380961111111"] {
 .logo-footer {
       margin-top: 60px;
       margin-left: 215px;
+      text-decoration: none;
 }
 
-
-
-/* Отступы для поля адреса */
-.address {
-      margin-top: 20px;
-      margin-left: 215px;
-      padding: 0px;
-}
-
-/* Шрифт и цвет текста поля адрес*/
+/*  */
 .footer-contacts>a {
       font-family: 'Raleway';
       font-style: normal;
       font-weight: 700;
       font-size: 26px;
       line-height: 31px;
+      /* identical to box height */
+
       letter-spacing: 0.03em;
+
       color: white;
 }
 
-/* Шрифт для строк адреса физического, почты и телефона */
-.address {
+.address-links {
+      list-style-type: none;
+      list-style-position: outside;
+      margin: 0%;
+      padding: 0%;
+      margin-top: 20px;
+      margin-left: 215px;
+}
+
+/* Отступы для поля адреса */
+.address-links a {
+      list-style-position: outside;
+      text-decoration: none;
+      font-style: normal;
+
+}
+
+/* Шрифт и цвет текста поля адрес*/
+.map {
       font-family: 'Roboto';
       font-style: normal;
       font-weight: 400;
       font-size: 14px;
       line-height: 24px;
       letter-spacing: 0.03em;
-      font-style: normal;
-}
-
-/* Местоположение элементов списка*/
-.address-links {
-      padding-left: 0px;
-}
-
-/* Цвет текста адреса физический Студии */
-.map {
       color: #FFFFFF;
 }
 
-/* Цвет текста адреса почты и телефона в Футере */
+/* Шрифт для строк адреса физического, почты и телефона */
 .mailto,
 .tel {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.03em;
+
       color: rgba(255, 255, 255, 0.6);
 }
 
 
+
+
+
+
+
 /* PORTFOLIO CSS */
-.link {
-      text-decoration: none;
-      font-style: none;
-}
+
 
 .address,
 .address-links,
