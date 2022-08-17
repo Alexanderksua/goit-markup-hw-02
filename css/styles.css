@@ -169,9 +169,10 @@ a[href="tel:+380961111111"] {
 
 /* Размеры и позиция секции качеств студии */
 .qualitie {
-      width: 1170px;
+      width: 1600px;
       height: 98px;
-      margin: 94px 215px;
+      margin-top: 94px;
+      margin-left: 215px;
       padding: 0px;
 }
 
