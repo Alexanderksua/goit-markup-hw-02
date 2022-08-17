@@ -1,11 +1,9 @@
-/* BODY */
+/* BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY*/
 body {
       background-color: #F5F5F5;
 }
 
-/* MAIN */
-
-/* HEADER */
+/* HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER*/
 
 /* Шрифт и Цвет Текстового Логотипа */
 .logo-header {
@@ -36,7 +34,7 @@ a[href="tel:+380961111111"] {
       color: #757575;
 }
 
-/* Шрифт и цвет текста ссылок навигации и контактов */
+/* Шрифт и цвет текста ссылок навигации */
 .pages,
 .contacts {
       font-family: 'Roboto';
@@ -106,9 +104,9 @@ a[href="tel:+380961111111"] {
       padding-left: 50px;
 }
 
+/* MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN*/
 
-
-/* HERO */
+/* HERO HERO HERO HERO HERO HERO HERO HERO HERO HERO*/
 
 /* Цвет и размер блока HERO */
 .main-top-section-background {
@@ -138,12 +136,12 @@ a[href="tel:+380961111111"] {
 }
 
 /* Размер и позиция блока кнопки "Замовити послугу" */
-.main-top-section-button {
+.box {
       width: 216px;
       height: 50px;
       margin: 0px;
       padding: 30px 692px;
-
+      background: #2196F3;
 }
 
 /* Шрифт и цвет заголовка секции HERO */
@@ -166,12 +164,180 @@ a[href="tel:+380961111111"] {
       border-radius: 4px;
 }
 
-/* FOOTER */
+
+/* КАЧЕСТВА СТУДИИ КАЧЕСТВА СТУДИИ КАЧЕСТВА СТУДИИ КАЧЕСТВА СТУДИИ КАЧЕСТВА СТУДИИ*/
+
+/* Размеры и позиция секции качеств студии */
+.qualitie {
+      width: 1170px;
+      height: 98px;
+      margin: 94px 215px;
+      padding: 0px;
+}
+
+/* Размеры и позиция єлементов секции качеств студии */
+.qualitie-details,
+.qualitie-punctual,
+.qualitie-planning,
+.qualitie-techs {
+      width: 270px;
+      padding-left: 15px;
+      padding-right: 15px;
+}
+
+/* Отмена оформления метки элементов списков */
+.qualitie-feature,
+.specs-images {
+      list-style-type: none;
+}
+
+/* Список качеств студии позиционирование списка в ряд */
+.qualitie-feature {
+      display: flex;
+      flex-direction: row;
+}
+
+/* Шрифт и цвет заголовков */
+.qualitie-title {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: #212121;
+}
+
+/* Шрифт и цвет текста обзацев */
+.qualitie-paragraf {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.03em;
+      color: #757575;
+}
+
+/* ЧЕМ МЫ ЗАНИМАЕМСЯ */
+.team-title {
+      width: 1600px;
+      text-align: center;
+
+      margin-top: 94px;
+      margin-bottom: 50px;
+}
+
+/* Фото в ряд */
+.specs-images {
+      width: 1600px;
+      display: flex;
+      flex-direction: row;
+      margin-left: 215px;
+}
+
+/* Отступы между картинками */
+.images-padd {
+      padding-right: 30px;
+}
+
+
+
+/* НАША КОМАНДА НАША КОМАНДА НАША КОМАНДА НАША КОМАНДА НАША КОМАНДА*/
+
+/* Резмер, отступы, шрифт и цвет для зоголовка */
+.team-title {
+      width: 1600px;
+      text-align: center;
+
+      margin-top: 94px;
+      margin-bottom: 50px;
+
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 42px;
+      letter-spacing: 0.03em;
+      color: #212121;
+}
+/* Цвет фона, размеры и оформление тени карточки сотрудника */
+.team-card-background {
+      width: 270px;
+      height: 368px;
+      background: #FFFFFF;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 0px 0px 4px 4px;
+}
+
+/* Задание типа блока и отступ слева для фото */
+.team-photos {
+      display: flex;
+      flex-direction: row;
+      margin-left: 215px;
+}
+
+/* Отступы между фото */
+.team-photos>li {
+      padding-right: 30px;
+}
+
+/* Шрифт и цвет Имен */
+.team-photos h3 {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+
+      text-align: center;
+
+      letter-spacing: 0.03em;
+      color: #212121;
+}
+
+/* Шрифт и цвет должностей */
+.team-photos p {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+
+      text-align: center;
+
+      letter-spacing: 0.03em;
+      color: #757575;
+}
+
+/* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER */
+
+/* Размеры, отступ сверху и цвет фона футера */
 .footer-contacts {
+      width: 1600px;
+      height: 252px;
+      margin-top: 94px;
       background-color: #2F303A;
 }
 
+/* Отступы для лого */
 .logo-footer {
+      margin-top: 60px;
+      margin-left: 215px;
+}
+
+
+
+/* Отступы для поля адреса */
+.address {
+      margin-top: 20px;
+      margin-left: 215px;
+      padding: 0px;
+}
+
+/* Шрифт и цвет текста поля адрес*/
+.footer-contacts>a {
       font-family: 'Raleway';
       font-style: normal;
       font-weight: 700;
@@ -179,10 +345,6 @@ a[href="tel:+380961111111"] {
       line-height: 31px;
       letter-spacing: 0.03em;
       color: white;
-}
-
-.blue-web {
-      color: #2196F3;
 }
 
 /* Шрифт для строк адреса физического, почты и телефона */
@@ -211,6 +373,7 @@ a[href="tel:+380961111111"] {
 .tel {
       color: rgba(255, 255, 255, 0.6);
 }
+
 
 /* PORTFOLIO CSS */
 .link {
@@ -249,6 +412,65 @@ a[href="tel:+380961111111"] {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* TRAINING*/
+/* Выбор всего меню */
+.menu {
+      list-style-type: none;
+      border: 2px solid black;
+      display: flex;
+      flex-direction: row-reverse;
+}
+
+/* Выбор из всего меню только детей(вложенность первого уровня) */
+.menu>li {
+      border: 2px solid blueviolet;
+}
+
+/* Выбор из всего меню только элементов(все уровни вложенности)
+ а(ссылка) с атрибутом href имеющим значение
+  в конце строки конкретных символов */
+.menu a[href$="5.com"] {
+      background-color: aquamarine;
+      border: 2px solid rgb(10, 180, 10);
+}
+
+/* Выбор из всего меню только элементов(все уровни вложенности)
+ li(элемент списка) с атрибутом class(класс) 
+имеющим значение в начале строки конкретных символов */
+.menu li[class^="menu-item-1"] {
+      background-color: rgb(180, 221, 207);
+}
+
+/* Очистка меток оформления элементов списков-детей */
+.sub-menu-1,
+.sub-menu-2,
+.sub-menu-3,
+.sub-menu-4,
+.sub-menu-5 {
+      list-style-type: none;
+}
+
+/* Убрать подчёркивание ссылок */
+.menu a[href^="https"] {
+      text-decoration: none;
+}
+
+
 /* 
 Проект
 ++«A1» В корне проекта есть папка images с изображениями. 
@@ -256,7 +478,7 @@ a[href="tel:+380961111111"] {
 ++«A3» Все стили написаны в одном файле styles.css,который находится в папке css. 
 ++«A4» В названиях файлов нет заглавных букв,пробелов и транслита,только буквы и слова английского языка. 
 ++«A5» Исходный код отформатирован при помощи Prettier. 
-+-«A6» Все изображения и текстовый контент взяты из макета. 
+++«A6» Все изображения и текстовый контент взяты из макета. 
 ++«A7» Все растровые изображения оптимизированы используя squoosh. 
 ++«A8» Код написан следуя руководству. 
 
