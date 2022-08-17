@@ -146,7 +146,6 @@ a[href="tel:+380961111111"] {
       height: 50px;
       margin: 0px;
       padding: 30px 692px;
-      background: #2196F3;
 }
 
 /* Шрифт и цвет заголовка секции HERO */
@@ -334,6 +333,7 @@ a[href="tel:+380961111111"] {
       display: flex;
       margin: 0%;
       padding: 0%;
+      margin-top: 94px;
       flex-direction: column;
       background-color: #2F303A;
 }
@@ -345,20 +345,17 @@ a[href="tel:+380961111111"] {
       text-decoration: none;
 }
 
-/*  */
+/* Шрифт и Цвет ссылки лого */
 .footer-contacts>a {
       font-family: 'Raleway';
       font-style: normal;
       font-weight: 700;
       font-size: 26px;
       line-height: 31px;
-      /* identical to box height */
-
       letter-spacing: 0.03em;
-
       color: white;
 }
-
+/* Отступы для списка адрес */
 .address-links {
       list-style-type: none;
       list-style-position: outside;
