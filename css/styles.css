@@ -1,500 +1,279 @@
-/* BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY*/
+:root {
+      /* Text Colors */
+      --black: #000000;
+      --dark-gray: #212121;
+      --gray: #2f303a;
+      --light-gray: #757575;
+      --blue: #2196f3;
+      --light-white: #ffffff;
+      --white-card-p: #eeeeee;
+      --white-: #ececec;
+      --white-60: rgba(255, 255, 255, 0.6);
+
+      /* BackGround Colors */
+      --white-bkgr: #f5f5f5;
+}
+
+/* BODY */
 body {
-      background-color: #F5F5F5;
+      width: 1600px;
+      color: var(--black);
+      background-color: var(--white-bkgr);
+      font-family: 'Roboto', 'Sans Serif';
 }
 
-/* HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER*/
-
-/* Шрифт и Цвет Текстового Логотипа */
-.logo-header {
-      font-family: 'Raleway';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 26px;
-      line-height: 31px;
-      letter-spacing: 0.03em;
-      color: black;
+/* Отключаем настройки по умолчанию */
+/* Отключаем настройки оформления списков по умолчанию*/
+.list {
+      list-style-type: none;
 }
 
-/* Цвет части текста "Web" Текстового Логотипа */
-.blue-web {
-      color: #2196F3;
-}
-
-.link {
+/* Отключаем настройки ссылок по умолчанию*/
+.list a,
+.header-logo,
+.footer-logo {
       text-decoration: none;
 }
 
-/* Отмена цвета по умолчанию текста ссылок навигации */
-a[href="./index.html"],
-a[href="./portfolio.html"],
-a[href="./contacts.html"] {
-      color: #212121;
-}
-
-/* Отмена цвета по умолчанию текста ссылок контактов */
-a[href="mailto:info@devstudio.com"],
-a[href="tel:+380961111111"] {
-      color: #757575;
-}
-
-/* Шрифт и цвет текста ссылок навигации */
-.pages,
-.contacts {
-      font-family: 'Roboto';
+.address {
       font-style: normal;
+}
+
+/* HEADER */
+.header {
+      background-color: var(--light-white);
+}
+
+.header-logo {
+      font-family: 'Raleway';
+
+      font-weight: 700;
+      font-size: 26px;
+      line-height: calc(31 / 26);
+      letter-spacing: 0.03em;
+      color: var(--black);
+}
+
+.blue-web {
+      color: var(--blue);
+}
+
+.header-group {
+
       font-weight: 500;
       font-size: 14px;
-      line-height: 16px;
+      line-height: calc(16 / 14);
       letter-spacing: 0.02em;
-      color: #212121;
-      list-style-type: none;
 }
 
-/* Цвет текста ссылок навигации и контактов 
-при наведениии курсора мыши :hover изменяется */
-.pages-studio-hover:hover,
-.contacts-email-hover:hover,
-.contacts-tel-hover:hover {
-      color: #2196F3;
+.nav-group a {
+      color: var(--dark-gray);
 }
 
-/* Назначение каждой части хедера метода отображения flex*/
-.logo-header,
-.pages,
-.contacts {
-      display: flex;
-      padding: 0px;
-      margin: 0px;
+.header-contacts a {
+      color: var(--light-gray);
 }
 
-/* Рассположение трёх частей хедера в ряд */
-.header-background {
-      width: 1600px;
-      height: 80px;
-      background-color: #FFFFFF;
-      display: flex;
-      flex-direction: row;
+.hover-focus-i:hover,
+.hover-focus-i:focus {
+      color: var(--blue);
 }
 
-/* Отступы между частями хедера согласно макету */
-/* Расстояние отступа внешнего от предыдущего элемента части
- определенно в margin-left */
-.logo-header {
-      margin-left: 215px;
-      margin-top: 24px;
-      margin-bottom: 25px;
+/* FOOTER */
+.footer {
+      background-color: var(--gray);
 }
 
-.pages {
-      margin-left: 93px;
-      margin-top: 32px;
-      margin-bottom: 32px;
+.footer-logo {
+      font-family: 'Raleway';
+
+      font-weight: 700;
+      font-size: 26px;
+      line-height: calc(31 / 26);
+      letter-spacing: 0.03em;
+      color: var(--light-white);
 }
 
-.contacts {
-      margin-left: 344px;
-      margin-top: 32px;
-      margin-bottom: 32px;
+
+.contacts-item-mailto,
+.contacts-item-tel,
+.contacts-item-coord {
+
+      font-weight: 400;
+      font-size: 14px;
+      line-height: calc(24 / 14);
+      letter-spacing: 0.03em;
+      color: var(--white-60);
 }
 
-/* Отступ внутренний между Портфолио определён
-с помощью padding-.. */
-.portfolio-padd {
-      padding-left: 50px;
-      padding-right: 50px;
+.contacts-item-coord {
+      color: var(--light-white);
 }
 
-.tel-padd {
-      padding-left: 50px;
+.pages-item-link.curent {
+      color: var(--blue);
 }
 
-/* MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN*/
 
-/* HERO HERO HERO HERO HERO HERO HERO HERO HERO HERO*/
-
-/* Цвет и размер блока HERO */
-.main-top-section-background {
-      width: 1600px;
-      height: 600px;
-      background-color: #2F303A;
-      margin: 0px;
-      padding: 0px;
-
-}
-
-/* Размещение текста и кнопки по центру блока */
-.main-top-section-title,
-.main-top-section-button {
+/* MAIN INDEX */
+.hero {
+      background-color: var(--gray);
       text-align: center;
-      display: block;
 }
 
-/* Размер и позиция блока заголовка HERO */
-.main-top-section-title {
-      width: 696px;
-      height: 120px;
-      margin: 0px;
-      padding-top: 200px;
-      padding-left: 452px;
-      padding-right: 452px;
-}
+.hero-title {
 
-/* Размер и позиция блока кнопки "Замовити послугу" */
-.box {
-      width: 216px;
-      height: 50px;
-      margin: 0px;
-      padding: 30px 692px;
-}
-
-/* Шрифт и цвет заголовка секции HERO */
-.main-top-section-title {
-      font-family: 'Roboto';
-      font-style: normal;
       font-weight: 900;
       font-size: 44px;
-      line-height: 60px;
+      line-height: calc(60 / 44);
       text-align: center;
       letter-spacing: 0.06em;
       text-transform: uppercase;
-      color: #FFFFFF;
+      color: var(--light-white);
 }
 
-/* Шрифт и цвет заголовка кнопки "Замовити послугу" */
-.button-style {
-      background: #2196F3;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-      border-radius: 4px;
+.btn-hero {
+      width: 216px;
+      height: 50px;
+      background-color: var(--blue);
+      color: var(--light-white);
+      cursor: pointer;
 }
 
+.qualites-list-item-title {
 
-/* КАЧЕСТВА СТУДИИ КАЧЕСТВА СТУДИИ КАЧЕСТВА СТУДИИ КАЧЕСТВА СТУДИИ КАЧЕСТВА СТУДИИ*/
-
-/* Размеры и позиция секции качеств студии */
-
-/* Размеры и позиция єлементов секции качеств студии */
-.qualitie-details,
-.qualitie-punctual,
-.qualitie-planning,
-.qualitie-techs {
-      width: 270px;
-      height: 98px;
-      padding-right: 30px;
-      margin-top: 94px;
-}
-
-.qualitie-title {
-      margin: 0%;
-      padding: 0%;
-
-}
-
-/* Отмена оформления метки элементов списков */
-.qualitie-feature,
-.specs-images {
-      list-style-type: none;
-      list-style-position: inside;
-      padding-left: 0px;
-      padding-top: 0px;
-      margin-top: 0px;
-      margin-left: 215px;
-}
-
-/* Список качеств студии позиционирование списка в ряд */
-.qualitie-feature {
-      display: flex;
-      flex-direction: row;
-}
-
-/* Шрифт и цвет заголовков */
-.qualitie-title {
-      font-family: 'Roboto';
-      font-style: normal;
       font-weight: 700;
       font-size: 14px;
-      line-height: 16px;
+      line-height: calc(16 / 14);
       letter-spacing: 0.03em;
       text-transform: uppercase;
-      color: #212121;
+      color: var(--dark-gray);
 }
 
-/* Шрифт и цвет текста обзацев */
-.qualitie-paragraf {
-      font-family: 'Roboto';
-      font-style: normal;
-      font-weight: 400;
+.qualites-list-item-text {
+
       font-size: 14px;
-      line-height: 24px;
+      line-height: calc(24 / 14);
       letter-spacing: 0.03em;
-      color: #757575;
+      color: var(--light-gray);
 }
 
-/* ЧЕМ МЫ ЗАНИМАЕМСЯ */
-.team-title {
-      width: 1600px;
-      text-align: center;
+.features-title {
 
-      margin-top: 94px;
-      margin-bottom: 50px;
-}
-
-/* Фото в ряд */
-.specs-images {
-      width: 1600px;
-      display: flex;
-      flex-direction: row;
-      margin-left: 215px;
-}
-
-/* Отступы между картинками */
-.images-padd {
-      padding-right: 30px;
-}
-
-
-
-/* НАША КОМАНДА НАША КОМАНДА НАША КОМАНДА НАША КОМАНДА НАША КОМАНДА*/
-
-/* Резмер, отступы, шрифт и цвет для зоголовка */
-.team-title {
-      width: 1600px;
-      text-align: center;
-
-      margin-top: 94px;
-      margin-bottom: 50px;
-
-      font-family: 'Roboto';
-      font-style: normal;
       font-weight: 700;
       font-size: 36px;
-      line-height: 42px;
+      line-height: calc(42 / 36);
+      text-align: center;
       letter-spacing: 0.03em;
-      color: #212121;
+      color: var(--dark-gray);
 }
 
-/* Цвет фона, размеры и оформление тени карточки сотрудника */
-.team-card-background {
+.team-title {
+
+      font-weight: 700;
+      font-size: 36px;
+      line-height: calc(42 / 36);
+      text-align: center;
+      letter-spacing: 0.03em;
+      color: var(--dark-gray);
+}
+
+.team-list-item {
       width: 270px;
       height: 368px;
-      background: #FFFFFF;
+      background: var(--light-white);
       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
       border-radius: 0px 0px 4px 4px;
 }
 
-/* Задание типа блока и отступ слева для фото */
-.team-photos {
-      display: flex;
-      flex-direction: row;
-      padding: 0px;
-      margin-left: 215px;
-      list-style-type: none;
-}
+.team-list-item-title {
 
-/* Отступы между фото */
-.team-photos>li {
-      padding-right: 30px;
-}
-
-/* Шрифт и цвет Имен */
-.team-photos h3 {
-      font-family: 'Roboto';
-      font-style: normal;
       font-weight: 500;
       font-size: 16px;
-      line-height: 19px;
-
+      line-height: calc(19 / 16);
       text-align: center;
-
       letter-spacing: 0.03em;
-      color: #212121;
+      color: var(--dark-gray);
 }
 
-/* Шрифт и цвет должностей */
-.team-photos p {
-      font-family: 'Roboto';
-      font-style: normal;
-      font-weight: 400;
+.team-list-item-text {
+
       font-size: 16px;
-      line-height: 19px;
-
+      line-height: calc(19 / 16);
       text-align: center;
-
       letter-spacing: 0.03em;
-      color: #757575;
+      color: var(--light-gray);
 }
 
-/* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER */
+/* MAIN PORTFOLIO */
+/* BUTTONS */
+.btn {
 
-/* Размеры, отступ сверху и цвет фона футера */
-.footer-contacts {
-      width: 1600px;
-      height: 252px;
-      display: flex;
-      margin: 0%;
-      padding: 0%;
-      margin-top: 94px;
-      flex-direction: column;
-      background-color: #2F303A;
-}
-
-/* Отступы для лого */
-.logo-footer {
-      margin-top: 60px;
-      margin-left: 215px;
-      text-decoration: none;
-}
-
-/* Шрифт и Цвет ссылки лого */
-.footer-contacts>a {
-      font-family: 'Raleway';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 26px;
-      line-height: 31px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: calc(26 / 16);
+      text-align: center;
       letter-spacing: 0.03em;
-      color: white;
-}
-/* Отступы для списка адрес */
-.address-links {
-      list-style-type: none;
-      list-style-position: outside;
-      margin: 0%;
-      padding: 0%;
-      margin-top: 20px;
-      margin-left: 215px;
+      color: var(--dark-gray);
+      cursor: pointer;
 }
 
-/* Отступы для поля адреса */
-.address-links a {
-      list-style-position: outside;
-      text-decoration: none;
-      font-style: normal;
-
+.btn.all {
+      width: 73px;
+      height: 38px;
 }
 
-/* Шрифт и цвет текста поля адрес*/
-.map {
-      font-family: 'Roboto';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 24px;
-      letter-spacing: 0.03em;
-      color: #FFFFFF;
+.btn.websites {
+      width: 125px;
+      height: 38px;
 }
 
-/* Шрифт для строк адреса физического, почты и телефона */
-.mailto,
-.tel {
-      font-family: 'Roboto';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 24px;
-      letter-spacing: 0.03em;
+.btn.apps {
+      width: 112px;
+      height: 38px;
+}
 
-      color: rgba(255, 255, 255, 0.6);
+.btn.design {
+      width: 103px;
+      height: 38px;
+}
+
+.btn.marketing {
+      width: 130px;
+      height: 38px;
+}
+
+.hover-focus-p:hover,
+.hover-focus-p:focus {
+      background-color: var(--blue);
+      color: var(--light-white);
 }
 
 
-
-
-
-
-
-/* PORTFOLIO CSS */
-
-
-.address,
-.address-links,
-.button,
-.card,
-.contacts,
-.pages,
-.team-photos {
-      list-style-type: none;
-}
-
-.card-1-techno,
-.card-2-basket,
-.card-3-seafood,
-.card-4-prime,
-.card-5-boxes,
-.card-6-inspiration,
-.card-7-book,
-.card-8-lab,
-.card-9-business {
+/* CARDS */
+.cards-item {
       width: 370px;
       height: 404px;
-      background: #FFFFFF;
-      border: 1px solid #EEEEEE;
+      background: var(--light-white);
+      border: 1px solid var(--white-card-p);
 }
 
+.cards-item-title {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* TRAINING*/
-/* Выбор всего меню */
-.menu {
-      list-style-type: none;
-      border: 2px solid black;
-      display: flex;
-      flex-direction: row-reverse;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: calc(36 / 18);
+      letter-spacing: 0.06em;
+      color: var(--dark-gray);
 }
 
-/* Выбор из всего меню только детей(вложенность первого уровня) */
-.menu>li {
-      border: 2px solid blueviolet;
-}
+.cards-item-text {
 
-/* Выбор из всего меню только элементов(все уровни вложенности)
- а(ссылка) с атрибутом href имеющим значение
-  в конце строки конкретных символов */
-.menu a[href$="5.com"] {
-      background-color: aquamarine;
-      border: 2px solid rgb(10, 180, 10);
+      font-size: 16px;
+      line-height: calc(30 / 16);
+      letter-spacing: 0.03em;
+      color: var(--light-gray);
 }
-
-/* Выбор из всего меню только элементов(все уровни вложенности)
- li(элемент списка) с атрибутом class(класс) 
-имеющим значение в начале строки конкретных символов */
-.menu li[class^="menu-item-1"] {
-      background-color: rgb(180, 221, 207);
-}
-
-/* Очистка меток оформления элементов списков-детей */
-.sub-menu-1,
-.sub-menu-2,
-.sub-menu-3,
-.sub-menu-4,
-.sub-menu-5 {
-      list-style-type: none;
-}
-
-/* Убрать подчёркивание ссылок */
-.menu a[href^="https"] {
-      text-decoration: none;
-}
-
 
 /* 
 Проект
@@ -512,15 +291,15 @@ a[href="tel:+380961111111"] {
 ++«B2» Выполнена HTML-разметка всех элементов макета. 
 -+«B3» Теги использованы согласно их семантического смысла. 
 -+«B4» HTML проходит проверку валидатором без ошибок. 
---«B5» Имена классов описательные и понятные другому разработчику. 
---«B6» Имена классов не содержат заглавных букв,пробелов,транслита и названий тегов,только буквы и слова английского языка. 
+++«B5» Имена классов описательные и понятные другому разработчику. 
+++«B6» Имена классов не содержат заглавных букв,пробелов,транслита и названий тегов,только буквы и слова английского языка. 
       Если имя класса состоит из нескольких слов,они разделяются дефисом. 
---«B7» Атрибут href навигационных ссылок Студия и Портфолио содержит относительный путь к HTML-файлам этих страниц. 
+++«B7» Атрибут href навигационных ссылок Студия и Портфолио содержит относительный путь к HTML-файлам этих страниц. 
       При нажатии по ссылке происходит переход на соответствующую страницу в текущей вкладке браузера. 
---«B8» У тегов <img> указаны атрибуты размеров,как минимум width. 
---«B9» Изображения экспортированы из макета в формате jpg. 
---«B10» Группы однотипных элементов собраны в списки <ul>. 
--+«B11» Фильтр на странице Портфолио выполнен списком кнопок,
+++«B8» У тегов <img> указаны атрибуты размеров,как минимум width. 
+++«B9» Изображения экспортированы из макета в формате jpg. 
+++«B10» Группы однотипных элементов собраны в списки <ul>. 
+++«B11» Фильтр на странице Портфолио выполнен списком кнопок,
       каждой из которых задан атрибут type="button" . 
 ++«B12» Разметка хедера и футера одинаковая на всех страницах. 
 ++«B13» Все необходимые по макету шрифты и их вариации (вес и начертание) подключены с сервиса Google Fonts одной ссылкой. Необходимый вес для Raleway – 700,
@@ -530,25 +309,43 @@ a[href="tel:+380961111111"] {
 
 Оформление 
 ++«C1» Нет глобальных стилей элементов кроме <body>.
---«C2» Для оформления используются селекторы класса. 
+++«C2» Для оформления используются селекторы класса. 
 ++«C3» В стилях отсутствует !important. 
---«C4» У интерактивных элементов (кнопок и ссылок),
+++«C4» У интерактивных элементов (кнопок и ссылок),
       при наведении мышкой или фокусе с клавиатуры,
       есть активное состояние указанное в макете (изменение цвета). 
---«С5» Текст контактов в хедере и футере меняет цвет при ховере и фокусе. 
---«C6» Для хранения палитры цветов макета (текст, фон, выделение) используются CSS-переменные. 
---«С7» Для элемента <body> задано свойство font-family с доминантным    на макете шрифтом Roboto. 
---«С8» Указаны альтернативные варианты шрифта и тип семейства (без засечек) в конце перечисления font-family у элемента <body>. 
---«С9» Семейство шрифтов Roboto явно задано только для элемента <body>,
+++«С5» Текст контактов в хедере и футере меняет цвет при ховере и фокусе. 
+++«C6» Для хранения палитры цветов макета (текст, фон, выделение) используются CSS-переменные. 
+++«С7» Для элемента <body> задано свойство font-family с доминантным    на макете шрифтом Roboto. 
+++«С8» Указаны альтернативные варианты шрифта и тип семейства (без засечек) в конце перечисления font-family у элемента <body>. 
+++«С9» Семейство шрифтов Roboto явно задано только для элемента <body>,
       остальные элементы наследуют его. 
---«С10» Для элемента <body> задано свойство color с доминантным на макете цветом текста. Остальной текст наследует или переопределяет это значение. 
---«С11» Размер шрифта (свойство font-size) всех текстовых элементов точно соответствует значениям из макета. 
---«С12» Высота строки (свойство line-height) всех текстовых элементов точно соответствует значениям из макета и задана как множитель,
-      а не в px. 
---«С13» Цвет (свойство color) всех текстовых элементов точно соответствует значениям из макета. 
---«С14» Вес шрифта (свойство font-weight) всех текстовых элементов точно соответствует значениям из макета. 
---«С15» Вес шрифта (свойство font-weight) явно указан только если значение в макете отличается от стандартного для этого элемента в браузере. 
---«С16» Кнопкам задано свойство cursor со значением pointer. 
---«С17» В стилях не повторяются значения свойств, которые заданы браузером по умолчнаию. Например, ссылкам не нужно указывать cursor: pointer,
-      а абзацам font-style: normal или font-weight: 400. 
+++«С10» Для элемента <body> задано свойство color с доминантным на макете цветом текста. Остальной текст наследует или переопределяет это значение. 
+++«С11» Размер шрифта (свойство font-size) всех текстовых элементов точно соответствует значениям из макета. 
+++«С12» Высота строки (свойство line-height) всех текстовых элементов точно соответствует значениям из макета и задана как множитель, а не в px. 
+++«С13» Цвет (свойство color) всех текстовых элементов точно соответствует значениям из макета. 
+++«С14» Вес шрифта (свойство font-weight) всех текстовых элементов точно соответствует значениям из макета. 
+++«С15» Вес шрифта (свойство font-weight) явно указан только если значение в макете отличается от стандартного для этого элемента в браузере. 
+++«С16» Кнопкам задано свойство cursor со значением pointer. 
+++«С17» В стилях не повторяются значения свойств, которые заданы браузером по умолчнаию. Например, ссылкам не нужно указывать cursor: pointer, а абзацам font-style: normal или font-weight: 400. 
+*/
+
+
+/*
+
+Правки по вашій роботі: 
+1. http: //joxi.net/LmGO084sBNGO7m -1,
+++1 - весь контент main огортаємо тегом section,
+так як це одна велика секція 1,
+++2 - в секції перед списком кнопок робимо заголовок <h1>Портфоліо</h1>1.
+++3 - замість р робимо заголвок h2 
+++1.4 - весь контент картки огортаємо в тег <а>,
+щоб зробити картки інтерактивними 
+++2. Всі кольори на макеті потрібно прописати через змінні, для цього на самому початку файлу зі стилями робимо директорію :root і прописуємо туди змінні (приклад: http://joxi.net/823GKb4HzQYBW2)
+++3. На body задаємо приорітетні властивості, такі як шрифт/колір/розмір (приклад: http://joxi.net/8An19GWfN94vD2)
+++4. font-family - наслідуєма властивість, тому якщо ми задаємо її body усі текстові елементи її наслідують, тому не потрібно задавати додатково 
+++5. http://joxi.net/BA0qWMOu18YQqr - всі кольори задаємо через змінні і так далі по коду
+++6. http://joxi.net/L21gdvlcwNBQer - для всіх текстових елементів висоту стрічки прописуємо як множитель, без одиниць виміру, для цього значення line-height:(16)/font-size:(14) і результат записуємо через крапку: line-height: 1.14
+++7. http://joxi.net/82QJNDMH8a70JA - кнопка не оформлена
+++8. http://joxi.net/Q2KkBV4CO6Qex2 - контакти у футері також мають мати ховер/фокус (колір такий самий як у хедері)
 */

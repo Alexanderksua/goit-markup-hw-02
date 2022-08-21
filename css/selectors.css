@@ -1,0 +1,108 @@
+/* Tag selectors */
+body {
+  
+}
+ul {
+  color:aqua;
+}
+
+/* Class selectors */
+.list-1 {
+  color:blueviolet;
+}
+
+.link {
+  font-size: 30px;
+}
+
+/* ID Selectors */
+#section {
+  background-color: wheat;
+}
+/* Inherit Selector */
+section a{
+color: blue;
+}
+
+/* Child Selector */
+section > ul, a{
+  background-color: brown;
+}
+
+/* Attribute Selector */
+/* [href="https://"]{
+  text-decoration: line-through;
+} */
+
+/* Composition Selectors */
+.hero .link {
+  text-transform: uppercase;
+}
+/* Pseudoclasses */
+/* :hover */
+.link:hover {
+  color: lightgreen;
+}
+.text:hover,
+.link:focus {
+  color: aqua;
+  font-size: 20px;
+}
+/* :focus  TAB key*/ 
+.link:focus {
+  color: chocolate;
+}
+/* :active */
+.link:active {
+  color: #000;
+}
+
+.button {
+  font-size: 1.5;
+  background-color: teal;
+  color:wheat;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.button:active {
+  font-size: 1.5;
+  background-color: blueviolet;
+  color: red;
+}
+
+.link:visited {
+  background-color: #fff;
+  
+}
+.text {
+  color: rgba(24, 230, 72, 0.947);
+  color: #0f0f0f;
+}
+
+/* Cascading */
+/*0001*/
+p {
+  color: #000;
+
+}
+/*0010*/
+.text {
+color: #000;
+
+}
+/*0020*/
+.hero .text {
+color: red;
+}
+
+/*0100*/
+#id-text {
+  color: blue;
+}
+/* p<.text<.hero .text<#id-text */
+/* #id-text > .hero .text > .hero > p */
+
+.hero-link {
+  color: inherit;
+}
