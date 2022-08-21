@@ -22,7 +22,6 @@ body {
       font-family: 'Roboto', 'Sans Serif';
 }
 
-/* Отключаем настройки по умолчанию */
 /* Отключаем настройки оформления списков по умолчанию*/
 .list {
       list-style-type: none;
@@ -44,9 +43,9 @@ body {
       background-color: var(--light-white);
 }
 
-.header-logo {
+.header-logo,
+.footer-logo {
       font-family: 'Raleway';
-
       font-weight: 700;
       font-size: 26px;
       line-height: calc(31 / 26);
@@ -59,7 +58,6 @@ body {
 }
 
 .header-group {
-
       font-weight: 500;
       font-size: 14px;
       line-height: calc(16 / 14);
@@ -85,12 +83,6 @@ body {
 }
 
 .footer-logo {
-      font-family: 'Raleway';
-
-      font-weight: 700;
-      font-size: 26px;
-      line-height: calc(31 / 26);
-      letter-spacing: 0.03em;
       color: var(--light-white);
 }
 
@@ -98,8 +90,6 @@ body {
 .contacts-item-mailto,
 .contacts-item-tel,
 .contacts-item-coord {
-
-      font-weight: 400;
       font-size: 14px;
       line-height: calc(24 / 14);
       letter-spacing: 0.03em;
@@ -122,7 +112,6 @@ body {
 }
 
 .hero-title {
-
       font-weight: 900;
       font-size: 44px;
       line-height: calc(60 / 44);
@@ -141,7 +130,6 @@ body {
 }
 
 .qualites-list-item-title {
-
       font-weight: 700;
       font-size: 14px;
       line-height: calc(16 / 14);
@@ -151,7 +139,6 @@ body {
 }
 
 .qualites-list-item-text {
-
       font-size: 14px;
       line-height: calc(24 / 14);
       letter-spacing: 0.03em;
@@ -159,7 +146,6 @@ body {
 }
 
 .features-title {
-
       font-weight: 700;
       font-size: 36px;
       line-height: calc(42 / 36);
@@ -169,7 +155,6 @@ body {
 }
 
 .team-title {
-
       font-weight: 700;
       font-size: 36px;
       line-height: calc(42 / 36);
@@ -182,12 +167,13 @@ body {
       width: 270px;
       height: 368px;
       background: var(--light-white);
-      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+            0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
       border-radius: 0px 0px 4px 4px;
 }
 
 .team-list-item-title {
-
       font-weight: 500;
       font-size: 16px;
       line-height: calc(19 / 16);
@@ -197,7 +183,6 @@ body {
 }
 
 .team-list-item-text {
-
       font-size: 16px;
       line-height: calc(19 / 16);
       text-align: center;
@@ -206,9 +191,9 @@ body {
 }
 
 /* MAIN PORTFOLIO */
+
 /* BUTTONS */
 .btn {
-
       font-weight: 500;
       font-size: 16px;
       line-height: calc(26 / 16);
@@ -259,7 +244,6 @@ body {
 }
 
 .cards-item-title {
-
       font-weight: 700;
       font-size: 18px;
       line-height: calc(36 / 18);
@@ -268,7 +252,6 @@ body {
 }
 
 .cards-item-text {
-
       font-size: 16px;
       line-height: calc(30 / 16);
       letter-spacing: 0.03em;
@@ -334,7 +317,7 @@ body {
 /*
 
 Правки по вашій роботі: 
-1. http: //joxi.net/LmGO084sBNGO7m -1,
+1. http://joxi.net/LmGO084sBNGO7m -1,
 ++1 - весь контент main огортаємо тегом section,
 так як це одна велика секція 1,
 ++2 - в секції перед списком кнопок робимо заголовок <h1>Портфоліо</h1>1.
